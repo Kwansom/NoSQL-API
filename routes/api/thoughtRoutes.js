@@ -1,6 +1,6 @@
 const express = require("express");
-const Thought = "../models/Thought"; // Import the Thought model
-const User = "../modesl/User";
+const Thought = require("../../models/Thought"); // Import the Thought model
+const User = require("../../models/User");
 const router = express.Router(); // creating new router instance
 
 // GET all thoughts

@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+// Destructure Schema from mongoose
+const { Schema } = mongoose;
 
 // Reaction schema
 const reactionSchema = new mongoose.Schema(
@@ -51,7 +53,7 @@ const thoughtSchema = new mongoose.Schema(
   {
     toJSON: {
       virtuals: true,
-      getters: true, 
+      getters: true,
     },
   }
 );

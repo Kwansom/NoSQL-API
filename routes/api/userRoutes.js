@@ -1,6 +1,6 @@
 const express = require("express");
-const User = "../models/User"; // Import the User
-const Thought = "../modes/Thought";
+const User = require("../../models/User"); // Import the User
+const Thought = require("../../models/Thought");
 const router = express.Router(); // creating new router instance
 
 // GET all users
@@ -69,10 +69,10 @@ router.delete("/:id", async (req, res) => {
 });
 
 // POST to add a new friend to user's friend list
-router.post("/:userId/friends/:friendsId", async (req, res) => {
+router.post("/:userId/friends/:friendId", async (req, res) => {
   try {
     const user = await User.findById(req.params.userId);
-    const friend = await User.findyById(req.params.friendId); // find friend by ID
+    const friend = await User.findById(req.params.friendId); // find friend by ID
     if (!user || !friend) {
       return res.json(404).json({ message: "User or friend not found" });
     }

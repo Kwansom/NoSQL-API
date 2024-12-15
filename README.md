@@ -16,13 +16,16 @@ POST route for creating a new user and saving into the database.
 ![NEW USER](./assets/postroute.png)
 
 ## Link to DEMO
-Click this [link]() to watch a walkthrough video of app functionality.
+
+Click this [link](https://drive.google.com/file/d/1h_tqCL8wBCeomQOUlT4oK_xmCwfjMLXf/view?usp=sharing) to watch a walkthrough video of app functionality.
 
 ## Installation
-1. Clone the repository to your local computer us the SSH key. 
+
+1. Clone the repository to your local computer us the SSH key.
 2. Have Insomnia installed for route testing.
 
 ## Usage
+
 2. Navigate to the project folder and install necessary dependencies: `npm install`.
 3. Afterwards run seed data using the command `node seed.js`.
 4. From there, start the server using the command `npm start`.

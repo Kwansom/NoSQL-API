@@ -69,6 +69,8 @@ router.delete("/:id", async (req, res) => {
   }
 });
 
+// REACTION
+
 // POST to create a reaction
 router.post("/:thoughtId/reactions", async (req, res) => {
   try {

@@ -71,7 +71,7 @@ router.delete("/:id", async (req, res) => {
 
 // REACTION
 
-// POST to create a reaction
+// POST to create a reaction to a thought
 router.post("/:thoughtId/reactions", async (req, res) => {
   try {
     const thought = await Thought.findById(req.params.thoughtId);
@@ -86,7 +86,7 @@ router.post("/:thoughtId/reactions", async (req, res) => {
   }
 });
 
-// DELETE to remove a reaction
+// DELETE to remove a reaction from a thought
 router.delete("/:thoughtId/reactions/:reactionId", async (req, res) => {
   try {
     const thought = await Thought.findById(req.params.thoughtId);
